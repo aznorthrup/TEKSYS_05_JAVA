@@ -1,8 +1,8 @@
 package main.java;
 
-public class TestMonster {
+public class TestMonster{
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		
 		Monster m1 = new FireMonster("r2u2");
 		Monster m2 = new WaterMonster("u2r2");
@@ -18,7 +18,13 @@ public class TestMonster {
 
 		Monster m4 = new Monster("u2u2");
 		m4.attack();
-
+		Monster m5 = new Monster("r2r2");
+		System.out.println("");
+		System.out.println("");
+		try {
+			Monster.checkMonster(m5.name);
+		}catch (Exception e) {
+			System.out.println("Problem occured"+ e);
+		}
 	}
-
 }

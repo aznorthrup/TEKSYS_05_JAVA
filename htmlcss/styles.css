@@ -1,0 +1,87 @@
+* {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    align-items: center;
+}
+
+html {
+    color: #00000073;
+    background-color: #5d5d5d;
+    text-align: center;
+    align-items: center;
+    text-shadow: 0px 0px 4px 4px #fff;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 40px;
+}
+
+ol {
+    font-size: 35px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 1.4em;
+}
+
+button {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 4px #fff;
+    padding: 25px 50px 25px 50px;
+    font-size: 20px;
+}
+
+.submitclass {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 4px #fff;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+}
+
+.submitclass:hover {
+    background-color: #969696;
+    box-shadow: 0px 0px 4px 4px #969696;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #969696;
+    box-shadow: 0px 0px 4px 4px #969696;
+    transition: 0.5s;
+}
+
+.submitclass:active {
+    background-color: #640000;
+    box-shadow: 0px 0px 4px 4px #640000;
+    transition: 0.2s;
+}
+
+button:active {
+    background-color: #640000;
+    box-shadow: 0px 0px 4px 4px #640000;
+    transition: 0.2s;
+}
+
+.form {
+    font-size: 25px;
+}
+
+input {
+    padding: 8px 15px;
+}

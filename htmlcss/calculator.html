@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+        table {
+            width: 200px;
+            height: 300px;
+            text-align: center;
+            border: 5px solid green;
+        }
+        
+        tr,
+        td {
+            border: 1px solid red;
+            text-align: center;
+        }
+        
+        tr,
+        th {
+            height: 15px;
+        }
+        
+        tr {
+            text-align: right;
+        }
+        
+        td:hover {
+            background-color: lightcoral;
+            color: white;
+        }
+        
+        .allZeros {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="calculator">
+        <table>
+            <tr>
+                <td colspan="4" class="allZeros">0.00</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>C</td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>/</td>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>*</td>
+
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>00</td>
+                <td>.</td>
+                <td>+</td>
+
+            </tr>
+            <td colspan="3">=</td>
+            <td>-</td>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #505050;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+hr {
+    width: 100%;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 100%;
+    max-width: 1300px;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.session2 {
+    flex-direction: column;
+}
+
+.header_info {
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    background-color: #505050;
+}
+
+.image {
+    height: 100px;
+    width: 200px;
+}
+
+aside {
+    padding-left: 60%;
+}

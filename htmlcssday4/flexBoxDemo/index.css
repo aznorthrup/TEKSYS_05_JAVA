@@ -1,0 +1,78 @@
+.title_container {
+    color: red;
+    flex: 5;
+}
+
+.menu_container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.menu_logo {
+    position: absolute;
+}
+
+nav {
+    width: 95%;
+    height: 110px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    display: inline;
+    text-align: center;
+    padding: 14px 70px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.outer_container {
+    display: flex;
+    flex: 10;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.one,
+.two,
+.three,
+.four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    color: black;
+    font-size: 25px;
+    margin: 5px;
+}
+
+body {
+    background-color: #323232;
+    color: white;
+}
+
+.one:hover,
+.two:hover,
+.three:hover {
+    background-color: white;
+    transition: .5s;
+}
+
+.four:hover {
+    background-color: crimson;
+    color: white;
+    transition: 2s;
+}

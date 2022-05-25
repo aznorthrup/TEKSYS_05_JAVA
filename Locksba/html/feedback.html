@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Add A Lock</title>
+</head>
+
+<body>
+    <table cellpadding="0px" cellspacing="0px" id="navBar">
+        <tr>
+            <td><a href="home.html">Home</a></td>
+            <td><a href="locks.html">The Lock Box</a></td>
+            <td><a class="selected" href="#">Feedback</a></td>
+        </tr>
+    </table>
+    <div class="center" id="fadein">
+        <h2 class="header" id="feedback_prompt">Do you have questions or feedback?</h2>
+        <form id="feedbackForm" action="https://formsubmit.co/generic@gmail.com" method="POST">
+            <label for="email">Email:</label><br>
+            <input type="email" placeholder="dantes@montecristo.com" name="email" required/><br>
+            <label for=" feedback">Message:</label><br>
+            <textarea placeholder="What's on your mind?" rows="3" columns="20" name="feedback" id="feedback" required></textarea><br>
+            <button type="submit" id="submit_button">Send</button>
+        </form>
+    </div><br><br><br><br><br><br><br>
+    <script src="/js/feedback.js"></script>
+</body>
+
+</html>

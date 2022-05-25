@@ -28,10 +28,16 @@ lockPurposeArray = JSON.parse(lockPurposeArrayLoad);
 function loadLocks() {
     let allCards = document.querySelector(".container");
     allCards.innerHTML = "";
+    if (lockBrandArray == null) {
+        lockBrandArray = ["Master", "Brinks", "Ace", "Abus"];
+        lockModelArray = ["M150", "Double", "A3", "No41"];
+        lockSecurityArray = ["1", "3", "4", "6"];
+        lockPurposeArray = ["Shed", "House", "Container", "Storage"];
+    }
     for (let i = 0; i < lockBrandArray.length; i++) {
         let currCards = document.querySelector(".container").innerHTML;
         allCards.innerHTML =
-            `<div id="card" class="boxes" style="background-image: url('/css/${lockBrandArray[i]}.jpg');">
+            `<div id="card" class="boxes" style="background-image: url('${lockBrandArray[i]}.jpg');">
         <div class="card-content">
         <p class="lighter">${lockBrandArray[i]}<br> ${lockModelArray[i]}
         <br> Security:${lockSecurityArray[i]}

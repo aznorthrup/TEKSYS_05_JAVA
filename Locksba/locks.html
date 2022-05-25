@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>The Lock Box</title>
+</head>
+
+<body>
+    <table cellpadding="0px" cellspacing="0px" id="navBar">
+        <tr>
+            <td><a href="home.html">Home</a></td>
+            <td><a class="selected" href="#">The Lock Box</a></td>
+            <td><a href="feedback.html">Feedback</a></td>
+        </tr>
+    </table>
+    <div class="center" id="fadein">
+        <h1>Lock Catalog</h1>
+        <button id="myBtn">Add Lock</button>
+    </div>
+    <div class="container" id="fadein">
+
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content"></div>
+        <span class="close">&times;</span>
+        <form id="make_lock">
+            <label for="brand">Brand:</label><br>
+            <select name="brand" class="lock_input" id="new_brand" required><br>
+        <option value="Abus">Abus</option>
+        <option value="Ace">Ace</option>
+        <option value="Brinks">Brinks</option>
+        <option value="Master">Master</option>
+        </select>
+            <p id="note">*Choose any one of the "big four" to add to The Lock Box page</p><br>
+            <label for="model">Model:</label><br>
+            <input type="text" placeholder="M150, simple padlock, etc... " name="model " class="lock_input" id="new_model" required><br>
+            <label for="security">Security Level:</label><br>
+            <select name="security" class="lock_input" id="new_sec" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+            <p id="note">*This section is completely subjective. The choice is yours!</p><br>
+            <label for="purpose">Purpose:</label><br>
+            <input type="text" placeholder="Storage container, back shed, gate, etc..." name="purpose" class="lock_input" id="new_purp" required><br>
+            <button type="submit" id="submit_lock">Submit</button>
+            <button type="reset" id="reset_lock">Reset</button>
+        </form>
+    </div>
+    <script src="newlocks.js" defer></script>
+    </div>
+</body>
+
+</html>

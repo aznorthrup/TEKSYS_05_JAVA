@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Flowers and Cities</title>
+</head>
+<body>
+	<table style="border: 1px solid black">
+		<tr th:each="flowers:${flowers}">
+			<td th:text="${flowers}" />
+		</tr>
+	</table>
+	<table style="border: 1px solid black">
+		<tr th:each="cities: ${cities}">
+			<td th:text="${cities}" />
+		</tr>
+	</table>
+</body>
+</html>

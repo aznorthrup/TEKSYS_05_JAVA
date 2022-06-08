@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Flowers</title>
+</head>
+<body>
+	<table style="border: 1px solid black">
+		<tr th:each="flowers:${flowers}">
+			<td th:text="${flowers}" />
+		</tr>
+	</table>
+</body>
+</html>

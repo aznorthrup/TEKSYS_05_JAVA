@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	
+<head>
+
+<title>Security example</title>
+
+</head>
+
+<body>
+
+	<h2 th:inline="text">I am glad you agree [[${#httpServletRequest.remoteUser}]]!</h2>
+
+	<form th:action="@{/logout}" method="POST">
+		<input type="submit" value="Sign-out">
+	</form>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<title>Edit profile</title>
+</head>
+<body>
+<form method="POST" th:action="/{id}(id=${user.id})" th:object="${user}">
+	<input id="username" placeholder="Enter username" th:field="*{username}" type="text" required/>
+	<input id="description" placeholder="Enter description" th:field="*{description}" type="text" required/>
+	<input id="working" th:field="*{working}" type="hidden" value="true" required/>
+	<input type="submit" value="Update" onclick="document.getElementById('working').value=true"/>
+	<input type="submit" value="Depete" onclick="document.getElementById('working').value=false"/>
+</form>
+</body>
+</html>

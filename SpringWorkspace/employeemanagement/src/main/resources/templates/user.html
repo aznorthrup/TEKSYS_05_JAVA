@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<title>User profile</title>
+</head>
+<body>
+	<table>
+		<!--    first row-->
+		<tr>
+			<th>username</th>
+			<th>description</th>
+			<th>Date</th>
+		</tr>
+		<!--    second row
+    <tr th:if="${#lists.isEmpty(userEntity)}">
+        <td colspan="7">No users found. Add user.</td>
+    </tr>
+    third row-->
+		<tr th:each="user:${user}">
+			<td th:field="${user.username}"></td>
+			<td th:text="${user.description}"></td>
+			<td th:text="${user.targetDate}"></td>
+		</tr>
+	</table>
+</body>
+</html>
